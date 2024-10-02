@@ -9,9 +9,9 @@ function solve5(a) {
 }
 
 function checkNumber(n) {
-  if (n < 0 && n != "Number") {
+  if (n < 0 && n !== "Number") {
     return console.log("Invalid");
-  } else if (solve3(n) && solve5(n) > 0) {
+  } else if (solve3(n) > 0 && solve5(n) > 0) {
     return console.log("Chia hết cho cả 3 số: 3, 5 và 15");
   } else if (solve5(n) > 0) return console.log("Chia hết cho 5");
   else if (solve3(n) > 0) {
